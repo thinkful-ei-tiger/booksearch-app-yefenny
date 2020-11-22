@@ -1,11 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from './App';
+import Bars from './Bars';
 
-describe('App component', () => {
+describe('Bars Component', () => {
   it('render without crashing', () => {
     const div = document.createElement('div');
-    ReactDOM.render(<App />, div);
+    ReactDOM.render(<Bars />, div);
     ReactDOM.unmountComponentAtNode(div);
   });
 });

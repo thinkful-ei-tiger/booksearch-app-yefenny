@@ -1,0 +1,10 @@
+.FilterBar{
+    display: flex;
+    justify-content: center;
+    background-color: #bbbbbb;
+    padding: 10px;
+}
+
+.FilterBar > select{
+    margin: 0px 5px;
+}

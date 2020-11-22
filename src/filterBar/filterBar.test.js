@@ -1,11 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from './App';
+import FilterBar from './filterBar';
 
-describe('App component', () => {
+describe('FilterBar Component', () => {
   it('render without crashing', () => {
     const div = document.createElement('div');
-    ReactDOM.render(<App />, div);
+    ReactDOM.render(<FilterBar />, div);
     ReactDOM.unmountComponentAtNode(div);
   });
 });
