@@ -22,10 +22,13 @@ export default function Book(props) {
           <span>
             Price:{' '}
             {book.saleInfo.listPrice
-              ? book.saleInfo.listPrice.amount
+              ? `$ ${book.saleInfo.listPrice.amount.toFixed(2)}`
               : 'Not for sale'}
           </span>
-          <p>{book.volumeInfo.description}</p>
+          <p>
+            {book.volumeInfo.description !== undefined &&
+              book.volumeInfo.description.substring(0, 250)}
+          </p>
         </div>
       </div>
     </div>
